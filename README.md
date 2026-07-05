@@ -55,6 +55,8 @@ npx skills add davidmeirlevy/obvious-skills --list
 | `/improve-performance` | Improve the performance of the current code |
 | `/just-write-the-code` | Just write the code, no explanations |
 | `/make-it-production-ready` | Make it production ready |
+| `/make-it-rules` | Save this session's conclusions as Cursor rules |
+| `/make-it-skill` | Turn this session into a reusable skill for next time |
 | `/make-it-work` | Make it work |
 | `/refactor-to-proper-system-design` | Refactor the codebase to follow proper system design principles |
 | `/remove-console-logs` | Remove all console.log statements |
