@@ -1,5 +1,20 @@
 # obvious-skills
 
+<p align="center">
+  <img src="assets/logo.png" alt="obvious-skills — packaged personalities for AI code tools" width="360" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT" />
+  <img src="https://img.shields.io/badge/test%20coverage-0%25-red" alt="Test coverage: 0%" />
+  <img src="https://img.shields.io/badge/enterprise%20ready-lol%20no-critical" alt="Enterprise ready: lol no" />
+  <img src="https://img.shields.io/badge/sarcasm-100%25-orange" alt="Sarcasm: 100%" />
+  <img src="https://img.shields.io/badge/bus%20factor-1-critical" alt="Bus factor: 1" />
+  <img src="https://img.shields.io/badge/built%20with-spite%20%26%20caffeine-black" alt="Built with: spite and caffeine" />
+  <img src="https://img.shields.io/badge/blockchain-not%20yet-lightgrey" alt="Blockchain: not yet" />
+  <img src="https://img.shields.io/badge/vibes-immaculate-ff69b4" alt="Vibes: immaculate" />
+</p>
+
 You know that context you type into every AI coding tool, every single session, since the dawn of "vibe coding"? "Fix the bug." "Add tests." "Just write the code, no explanations." That's not a prompt, that's a personality trait at this point.
 
 This is that. Packaged. As slash commands. So you can stop hand-typing your own personality into a chatbox forty times a day.
