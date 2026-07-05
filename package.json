@@ -1,17 +1,7 @@
 {
   "name": "obvious-skills",
   "version": "1.0.0",
-  "description": "Blindingly obvious Claude Code skills — the skill name IS the instruction",
-  "keywords": ["claude-code", "skills", "claude", "ai"],
-  "license": "MIT",
-  "bin": {
-    "obvious-skills": "./bin/install.js"
-  },
-  "files": [
-    "bin/",
-    "skills/"
-  ],
-  "engines": {
-    "node": ">=18"
-  }
+  "description": "Blindingly obvious agent skills — the skill name IS the instruction",
+  "keywords": ["claude-code", "skills", "claude", "ai", "cursor", "codex", "agent-skills"],
+  "license": "MIT"
 }

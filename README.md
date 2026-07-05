@@ -4,20 +4,26 @@ You know that context you type into every AI coding tool, every single session, 
 
 This is that. Packaged. As slash commands. So you can stop hand-typing your own personality into a chatbox forty times a day.
 
-Ships pre-wired for [Claude Code](https://claude.com/claude-code), but let's be honest — a skill here is a markdown file with two lines in it. Cursor, Codex, Antigravity, whatever the next "agentic IDE" calls itself next quarter — they all eat plain text. Copy, paste, done. We even threw in `/convert-claude-to-cursor` and `/convert-cursor-to-claude` so you can pretend the format matters.
+Works with Claude Code, Cursor, Codex, Antigravity, and whatever the next "agentic IDE" calls itself next quarter — they all speak the same [Agent Skills](https://github.com/vercel-labs/skills) format. We didn't write our own installer for that. We're not maniacs. We use [`npx skills`](https://github.com/vercel-labs/skills), the one everyone else already agreed on.
 
 ## Install
 
 ```bash
-npx obvious-skills           # install to ~/.claude/skills/ (all projects)
-npx obvious-skills --local   # install to .claude/skills/ (this project only)
+npx skills add davidmeirlevy/obvious-skills                     # install every skill, pick your agent(s) interactively
+npx skills add davidmeirlevy/obvious-skills --agent claude-code  # install for Claude Code specifically
+npx skills add davidmeirlevy/obvious-skills --agent cursor       # or Cursor
+npx skills add davidmeirlevy/obvious-skills -g                   # install globally instead of per-project
 ```
 
-Restart Claude Code after installing so it picks up the new skills. Using Cursor/Codex/Antigravity/etc? Grab the file from `skills/` and drop it wherever that tool hoards its prompts. Revolutionary stuff, we know.
+Only want one skill instead of the full personality disorder? Install it individually:
+
+```bash
+npx skills add davidmeirlevy/obvious-skills -s fix-the-bug
+```
 
 ## Usage
 
-Once installed, invoke any skill as a slash command inside Claude Code:
+Once installed, invoke any skill as a slash command in your agent of choice:
 
 ```
 /fix-the-bug
@@ -25,10 +31,10 @@ Once installed, invoke any skill as a slash command inside Claude Code:
 /code-review
 ```
 
-List everything available without installing:
+List what's in the box before committing to anything:
 
 ```bash
-npx obvious-skills --list
+npx skills add davidmeirlevy/obvious-skills --list
 ```
 
 ## Available skills
@@ -61,8 +67,8 @@ npx obvious-skills --list
 Turns out "having taste" was also just a file. Delete it:
 
 ```bash
-rm ~/.claude/skills/<skill-name>.md          # global install
-rm .claude/skills/<skill-name>.md            # local install
+npx skills remove <skill-name>          # remove one
+npx skills remove --all                 # remove all of them, and your dignity along with it
 ```
 
 ## Why does this exist
