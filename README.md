@@ -1,8 +1,10 @@
 # obvious-skills
 
-Blindingly obvious [Claude Code](https://claude.com/claude-code) skills — the skill name IS the instruction.
+You know that context you type into every AI coding tool, every single session, since the dawn of "vibe coding"? "Fix the bug." "Add tests." "Just write the code, no explanations." That's not a prompt, that's a personality trait at this point.
 
-Each skill is a one-line prompt turned into a slash command, so you can type `/fix-the-bug` instead of typing "fix the bug".
+This is that. Packaged. As slash commands. So you can stop hand-typing your own personality into a chatbox forty times a day.
+
+Ships pre-wired for [Claude Code](https://claude.com/claude-code), but let's be honest — a skill here is a markdown file with two lines in it. Cursor, Codex, Antigravity, whatever the next "agentic IDE" calls itself next quarter — they all eat plain text. Copy, paste, done. We even threw in `/convert-claude-to-cursor` and `/convert-cursor-to-claude` so you can pretend the format matters.
 
 ## Install
 
@@ -11,7 +13,7 @@ npx obvious-skills           # install to ~/.claude/skills/ (all projects)
 npx obvious-skills --local   # install to .claude/skills/ (this project only)
 ```
 
-Restart Claude Code after installing so it picks up the new skills.
+Restart Claude Code after installing so it picks up the new skills. Using Cursor/Codex/Antigravity/etc? Grab the file from `skills/` and drop it wherever that tool hoards its prompts. Revolutionary stuff, we know.
 
 ## Usage
 
@@ -56,13 +58,17 @@ npx obvious-skills --list
 
 ## Uninstall
 
-Skills are just files — delete what you don't want:
+Turns out "having taste" was also just a file. Delete it:
 
 ```bash
 rm ~/.claude/skills/<skill-name>.md          # global install
 rm .claude/skills/<skill-name>.md            # local install
 ```
 
+## Why does this exist
+
+Because somewhere out there is a developer who typed "please add error handling, thanks" into a chat window with a "please" and a "thanks," and we decided that person needed an intervention, not a therapist.
+
 ## License
 
-MIT
+MIT. Steal it. It's four words per file, there's nothing to steal.
